@@ -42,13 +42,13 @@ output/
 
 ## Tasks and Outputs
 The following analytical tasks are performed using Spark Structured APIs, with each output saved to a dedicated CSV file.
-1.  **Find each user's favorite genre:** Identifies the most frequently listened-to genre for every user by counting their plays for each genre.
+1.  **Find each user's favorite genre:** Identifies the most frequently listened-to genre for every user by counting their plays for each genre. <br >
    **Output Path**: `outputs/user_favorite_genres/`
-2.  **Calculate the average listen time per song:** Computes the average listening duration in seconds for every song across all user listening events. 
+2.  **Calculate the average listen time per song:** Computes the average listening duration in seconds for every song across all user listening events. <br >
    **Output Path:** outputs/avg_listen_time_per_song/
-3.  **Compute the genre loyalty score for each user:** Calculates the proportion of a user's listening activity that belongs to their favorite genre. The output is filtered to include only users with a loyalty score greater than 0.8.
+3.  **Compute the genre loyalty score for each user:** Calculates the proportion of a user's listening activity that belongs to their favorite genre. The output is filtered to include only users with a loyalty score greater than 0.8. <br >
    **Output Path:** outputs/genre_loyalty_scores/
-4.  **Identify "Night Owl" users:** Extracts a list of users who frequently listen to music during the late-night hours, specifically between 12 AM and 5 AM. 
+4.  **Identify "Night Owl" users:** Extracts a list of users who frequently listen to music during the late-night hours, specifically between 12 AM and 5 AM. <br >
    **Output Path:** outputs/night_owl_users/
 
 ## Execution Instructions
