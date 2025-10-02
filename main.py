@@ -45,7 +45,7 @@ favorite_genre_plays = (
 genre_loyalty_scores = (
     favorite_genre_plays.join(total_plays_per_user, on="user_id", how="inner")
     .withColumn("loyalty_score", col("plays_in_genre") / col("total_plays"))
-    .filter("loyalty_score > 0.8")
+    .filter("loyalty_score > 0.75")
     .select("user_id", "loyalty_score")
 )
 
